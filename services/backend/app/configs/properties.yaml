@@ -1,0 +1,3 @@
+geocode_url: https://geocoding-api.open-meteo.com/v1/search
+openmeteo_url: https://api.open-meteo.com/v1/forecast
+route_url: https://router.project-osrm.org/route/v1
