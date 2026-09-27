@@ -40,8 +40,6 @@ def get_weather_data(latitude: float, longitude: float, hourly: str | None = Non
 
     response_data = make_http_get_request(url, query_params)
 
-    print(f"Weather data response: {response_data}")  # Debugging line to print the response data
-
     openmeteo_response = OpenMeteoResponse.model_validate(response_data)
     return openmeteo_response
 
@@ -56,7 +54,5 @@ def get_route_data(start_latitude: float, start_longitude: float, end_latitude: 
     }
 
     response_data = make_http_get_request(url, query_params)
-
-    print(f"Route data response: {response_data}")  # Debugging line to print the response data
 
     return response_data
